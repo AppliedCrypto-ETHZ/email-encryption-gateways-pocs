@@ -19,7 +19,7 @@ from pathlib import Path
 # Replace with a host you control and can observe requests on (e.g. netcat, requestbin).
 ATTACKER_URL = "http://10.0.2.1:8000"
 
-import pgpy  # noqa: E402  (import after ATTACKER_URL so config stays at top)
+import pgpy
 
 # --- config (no CLI) ---
 SMTP_HOST = "10.0.2.2"

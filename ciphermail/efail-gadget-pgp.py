@@ -29,7 +29,6 @@ from pgpy.constants import CompressionAlgorithm
 SMTP_HOST = "10.0.2.2"
 SMTP_PORT = 25
 SENDER = "temp@external.test"
-ATTACKER_URL = "http://10.0.2.1:8000/1"
 SUBJECT = "Secret Code (PGP/MIME gadget)"
 
 SCRIPT_DIR = Path(__file__).resolve().parent
