@@ -28,6 +28,7 @@ This repository contains proof-of-concept artifacts for _Delegating Email Encryp
 | `header-decryption-oracle.py` | Header decryption-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, email addresses, and certificate path if needed and set up `authbind` to allow receiving the generated DSNs. Then run `./header-decryption-oracle.py`. |
 | `full-message-bounce.py` | Full-message-bounce PoC. | Install the OpenSSL cli, adjust the SMTP host and certificate path (CLI flags) if needed, then run `./full-message-bounce.py`. |
 | `subject-tag.py` | Unicode subject-tag and bounded subject-tag sanitization PoC. | Adjust the hard-coded SMTP host and email addresses if needed, then run `./subject-tag.py` (add `--unicode` for the Unicode variant). |
+| `long-subject-untagging.py` | Long-subject S/MIME untagging PoC. | Install OpenSSL, adjust the hard-coded SMTP host, email addresses, and certificate path if needed, then run `./long-subject-untagging.py`. |
 
 
 ## Proton Mail Bridge
