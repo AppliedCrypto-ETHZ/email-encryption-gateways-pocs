@@ -24,8 +24,8 @@ This repository contains proof-of-concept artifacts for _Delegating Email Encryp
 | `mixed-plaintext-and-encrypted-content.py` | Mixed plaintext/encrypted-content PoC. | Install `uv`, adjust the hard-coded SMTP host, addresses, and key path if needed, then run `./mixed-plaintext-and-encrypted-content.py`. |
 | `partial-signature.py` | Partial-signature PoC. | Install `uv`, adjust the hard-coded SMTP host, addresses, and key path if needed, then run `./partial-signature.py`. |
 | `mime-boundary-injection.py` | MIME boundary-injection PoC. | Install `uv`, adjust the hard-coded SMTP host, addresses, and key path if needed, then run `./mime-boundary-injection.py`. |
-| `bounce-padding-oracle.py` | CBC padding-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, addresses, and certificate path if needed and set up `authbind` accordingly. Then run `./bounce-padding-oracle.py`. |
-| `header-decryption-oracle.py` | Header decryption-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, addresses, and certificate path if needed and set up `authbind` accordingly. Then run `./header-decryption-oracle.py`. |
+| `bounce-padding-oracle.py` | CBC padding-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, addresses, and certificate path if needed and set up `authbind` to allow receiving the generated DSNs. Then run `./bounce-padding-oracle.py`. |
+| `header-decryption-oracle.py` | Header decryption-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, addresses, and certificate path if needed and set up `authbind` to allow receiving the generated DSNs. Then run `./header-decryption-oracle.py`. |
 | `full-message-bounce.py` | Full-message-bounce PoC. | Install the OpenSSL cli, adjust the SMTP host and certificate path (CLI flags) if needed, then run `./full-message-bounce.py`. |
 | `subject-tag.py` | Unicode subject-tag and bounded subject-tag sanitization PoC. | Adjust the hard-coded SMTP host and addresses if needed, then run `./subject-tag.py` (add `--unicode` for the Unicode variant). |
 
