@@ -12,6 +12,12 @@ This repository contains proof-of-concept artifacts for _Delegating Email Encryp
 | `unicode-subject-tag.py` | Unicode subject-tag PoC. | Adjust the hard-coded SMTP host and email addresses if needed, then run `python3 unicode-subject-tag.py`. |
 | `bounded-subject-tag-sanitization.txt` | Subject-tag sanitization test string. | Use the text as a message subject or fixture input. |
 | `long-subject-untagging.py` | Long-subject S/MIME untagging PoC. | Install OpenSSL, adjust the hard-coded SMTP host, email addresses, and certificate path if needed, then run `python3 long-subject-untagging.py`. |
+| `efail-direct-pgp.py` | EFAIL PGP direct-exfiltration PoC. | Install `uv`, adjust the hard-coded SMTP host, email addresses, and public-key path if needed. Set up an http server that listens for the exfiltrated secrets and point ATTACKER_URL at the server. Then run `./efail-direct-pgp.py`. |
+| `efail-gadget-smime.py` | EFAIL S/MIME gadget PoC. | Install `uv` and the OpenSSL cli, adjust the hard-coded SMTP host, email addresses, and certificate path if needed. Set up an http server that listens for the exfiltrated secrets and point the exfiltration gadget at the server. Be careful to maintain block alignment. Then run `./efail-gadget-smime.py`. |
+| `partial-signature.py` | Partial-signature PoC. | Install `uv`, adjust the hard-coded SMTP host, email addresses, and key path if needed, then run `./partial-signature.py`. |
+| `bounce-padding-oracle.py` | CBC padding-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, email addresses, and certificate path if needed, and set up `authbind` to allow receiving the generated DSNs. Then run `./bounce-padding-oracle.py`. |
+| `header-decryption-oracle.py` | Header decryption-oracle PoC. | Install `uv` and the OpenSSL cli. Adjust the hard-coded SMTP host, email addresses, and certificate path if needed, and set up `authbind` to allow receiving the generated DSNs. Then run `./header-decryption-oracle.py`. |
+| `full-message-bounce.py` | Full-message-bounce PoC. | Install `uv`, adjust the hard-coded SMTP host, email addresses, and key path if needed, then run `./full-message-bounce.py`. |
 
 
 ## Ciphermail
