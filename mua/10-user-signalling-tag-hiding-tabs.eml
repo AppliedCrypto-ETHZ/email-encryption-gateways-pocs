@@ -1,0 +1,11 @@
+From: "Fixture Lab" <attacker@example.test>
+To: "Gateway Test User" <victim@example.test>
+Date: Mon, 08 Jun 2026 12:00:00 +0000
+Message-ID: <fixture-10-tag-hiding-tabs.client-fixtures@example.test>
+Subject: Quarterly frosting memo																																																																																																																																																																																																																																																																																																																																																																																																[mixed content]
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+The warning tag is present in the Subject header after a long run of tabs.
+Check the message list and opened-message header to see whether it is visible.

@@ -1,0 +1,4 @@
+mitmproxy
+requests
+pgpy~=0.6
+cryptography>=42,<45

