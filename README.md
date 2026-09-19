@@ -100,3 +100,13 @@ HTTPS_PROXY=http://127.0.0.1:8080 bridge --cli
 
 # Disclosure
 These PoCs are provided for illustrative purposes. The corresponding vulnerabilities have been responsibly disclosed to the respective vendors. See the paper for details.
+
+# Target Images
+Since the VM images or binaries of the target systems are covered by the copyright of the respective vendors, we cannot distribute them here. The products can be downloaded from the following sources:
+
+| Vendor | Download | Notes |
+|--------|----------|-------|
+|SEPPmail|[Download Portal](https://downloads.seppmail.com/)|Current version only. Requires a license. Requires [initial configuration](https://docs.seppmail.com/en/04_com__comissioning-the-appliance.html).|
+|CipherMail|[Release Page](https://gitlab.com/ciphermail/ciphermail-community-gateway/-/releases)|Requires [initial configuration](https://www.ciphermail.com/documentation/gateway-administration-guide/setup.html).|
+|Proton|[Release Page](https://github.com/ProtonMail/proton-bridge/releases)|Requires a Proton account and a paid subscription (free trial available).|
+|Cisco| N/A |We are not aware of any official public download source. Requires [initial configuration](https://www.cisco.com/c/en/us/td/docs/security/esa/esa16-0-1/user_guide/b_ESA_Admin_Guide_16-0-1/b_ESA_Admin_Guide_12_1_chapter_010.html).|
